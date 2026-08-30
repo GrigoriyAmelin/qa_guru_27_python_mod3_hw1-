@@ -1,7 +1,3 @@
-import pytest
-from selenium import webdriver
-import time
-
 from selenium.webdriver.common.by import By
 
 def test_fill_all_fields_in_russian(text_box_page):

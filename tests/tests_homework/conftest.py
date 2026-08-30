@@ -2,6 +2,7 @@ import pytest
 from selenium import webdriver
 from dataclasses import dataclass
 
+
 @pytest.fixture()
 def text_box_page():
     driver = webdriver.Chrome()
@@ -11,11 +12,3 @@ def text_box_page():
     yield driver
 
     driver.quit()
-
-
-@dataclass()
-class TestData():
-    full_name: str
-    email: str
-    current_address: str
-    permanent_address: str
